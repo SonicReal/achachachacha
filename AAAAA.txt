@@ -1,0 +1,73 @@
+What is D3
+its open source JS library.
+this library may be use visual representations of data.
+This means you can create DOM elements using your data.
+This DOM elements can be simple HTML elements like buttons, headings, paragraphs and so on,
+ other may include charts, graphs as well.
+
+D3 makes use of HTML, CSS and SVG to create those representations.
+
+As you know these are technologies of web, so anything you can create using 
+D3 can be viewed on any modern browser, like Chrome, Safari, IE, Firefox
+
+Here i'll show you some fundamental concepts
+
+
+1. Selection and manipulation
+We need to include d3 script to our index.html
+
+Using d3 we can select DOM elements using css selectors
+d3 provides us two methods
+d3.select()  - selects first element that matches the criteria
+d3.selectAll() - get all elements
+
+d3.select('h1');
+if there is no h1 tag in html, it will return empty selection
+
+using d3 we can manipulate elements as well. we can update their style, values or bind data with them
+
+for example we can apply a style to h1 tag
+
+d3.select('h1').style('color','red');
+in d3 we can chain methods so that it helps keep code clean an readable
+
+.attr('class','heading');
+.text('Custom text');
+
+We can append DOM elements
+d3.select('body').append('p').text('Appended paragraph')
+
+append more paragraphs
+
+select all the paragraphs, and change their styles
+
+
+3. Data loading and binding
+
+Using d3 we can map data to our elements.
+Mainly we can append, update and do other manipulations using our data set.
+
+for ex we have this data set. we want to create paragraphs for each element of the array.
+<code>
+you can see 5 paragraphs was appended to the DOM.
+Each of them represents data item from our set
+we can also update the text of our paragraphs to show 
+the data of elements by passing a function instead of string.
+
+4. Creating a simple bar chart
+In HTML we have svg tag
+<code>
+
+5. Creating labels
+
+
+
+
+
+
+
+There are many resources available online.
+The official documentation of D3 is very helpful in this regard
+There is also many materials available on different platforms like medium.
+
+
