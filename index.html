@@ -81,15 +81,15 @@
                 <div class="livecode stretch">
 	<pre><code class="javascript">(function(){
         console.log("this is console")
-d3.select('h1')
- .style('color', 'red')
- .attr('class','heading')
- .text('Custom text');
-d3.select('body').append('p').text('Appended paragraph')
-d3.select('body').append('p').text('Appended paragraph2')
-d3.select('body').append('p').text('Appended paragraph3')
+//d3.select('h1')
+// .style('color', 'red')
+// .attr('class','heading')
+// .text('Custom text');
+//d3.select('body').append('p').text('Appended paragraph')
+//d3.select('body').append('p').text('Appended paragraph2')
+//d3.select('body').append('p').text('Appended paragraph3')
 
-d3.selectAll('p').style('color','blue');
+//d3.selectAll('p').style('color','blue');
 
 
 
@@ -116,13 +116,13 @@ d3.selectAll('p').style('color','blue');
                 <div class="livecode stretch">
 	<pre><code class="javascript">(function(){
 const data = [1, 2, 3, 4, 5];
-d3.select('body')
-    .selectAll('p') //empty selection
-    .data(data)
-    .enter() // one by one
-    .append('p')
-    .text('Our text')
-     .text(d => d)
+//d3.select('body')
+//    .selectAll('p') //empty selection
+//    .data(data)
+//    .enter() // one by one
+ //   .append('p')
+ //   .text('Our text')
+  //   .text(d => d)
 
 })();</code></pre>
                     <pre><code class="html">&lt;html&gt;
@@ -152,29 +152,29 @@ const barPadding = 5;
 const barWidth = svgWidth / data.length;
 
 
-const svg = d3.select('svg')
-    .attr('width', svgWidth)
-    .attr('height', svgHeight)
+//const svg = d3.select('svg')
+//    .attr('width', svgWidth)
+//    .attr('height', svgHeight)
 
-const barChart = svg.selectAll('rect')
-    .data(data) //waiting state
-    .enter()
-    .append('rect')
-    .attr('fill', (d, i) => '#FFAA' + (i + 4).toString() + (i + 4).toString())
-    .attr('y', d => svgHeight - d)
-    .attr('height', d => d)
-    .attr('width', barWidth - barPadding)
-    .attr('x', (d, i) => barWidth * i)
+//const barChart = svg.selectAll('rect')
+//    .data(data) //waiting state
+//    .enter()
+ //   .append('rect')
+ //  .attr('fill', (d, i) => '#FFAA' + (i + 4).toString() + (i + 4).toString())
+ //  .attr('y', d => svgHeight - d)
+ //  .attr('height', d => d)
+ //  .attr('width', barWidth - barPadding)
+ //  .attr('x', (d, i) => barWidth * i)
 // .attr('transform', (d, i) => 'translate(' + [barWidth * i, 0] + ")")
 
 
-const text = svg.selectAll('text')
-    .data(data)
-    .enter()
-    .append('text')
-    .text(d => d)
-    .attr('y', (d, i) => svgHeight - d - 2)
-    .attr('x', (d, i) => barWidth * i)
+//const text = svg.selectAll('text')
+//    .data(data)
+//    .enter()
+//    .append('text')
+//    .text(d => d)
+//    .attr('y', (d, i) => svgHeight - d - 2)
+//    .attr('x', (d, i) => barWidth * i)
 
 
 })();</code></pre>
