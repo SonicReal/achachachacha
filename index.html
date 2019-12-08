@@ -25,8 +25,30 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
+				<section>
+					<section  data-background="#ffffff">
+						<img src="./img/1.png">
+					</section>
+					<section  data-background="#ffffff">
+						<video>
+							<source src="./img/ex2.webm" type="video/webm" />
+						</video>
+					</section>
+
+				</section>
+
+				<section>
+					<p>What is D3.js</p>
+					<ul>
+						<li class="fragment">An open source JS library</li>
+						<li class="fragment">Helps creating visual representations of data</li>
+						<li class="fragment">Uses HTML, CSS, and SVG</li>
+						<li class="fragment">Viewable on modern browsers</li>
+						<li class="fragment">Easy to use API</li>
+					</ul>
+				</section>
 				<section>Slide 2</section>
+				<section>Slide3</section>
 			</div>
 		</div>
 
@@ -37,6 +59,7 @@
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
+				autoPlayMedia: true,
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
